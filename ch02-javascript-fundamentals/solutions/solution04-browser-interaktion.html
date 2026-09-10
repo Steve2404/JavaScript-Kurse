@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8">
+<title>Lösung 04 - Browser-Interaktion</title>
+<body>
+<script>
+const name = prompt("Wie heißt du?");
+if (name === null) {
+  alert("Anmeldung abgebrochen");
+} else {
+  const accepted = confirm("Möchtest du dich anmelden?");
+  alert(accepted ? `Willkommen, ${name}!` : "Anmeldung nicht bestätigt");
+}
+</script>
+</body>
+</html>
